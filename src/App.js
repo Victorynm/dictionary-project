@@ -8,6 +8,9 @@ function App() {
 			<h1>Dictionary</h1>
 			<h2>What word do you want to look up?</h2>
 			<Dictionary />
+			<footer className="m-5">
+				<small>Coded by Viktoriia Stanchak</small>
+			</footer>
 		</div>
 	);
 }
