@@ -24,8 +24,8 @@ export default function Dictionary() {
 	return (
 		<div className="Dictionary">
 			<section>
-				<h2 className="mt-3">What word do you want to look up?</h2>
-				<form className="m-4" onSubmit={searchWord}>
+				<h2 className="mt-3 text-center">What word do you want to look up?</h2>
+				<form className="m-4 text-center" onSubmit={searchWord}>
 					<input
 						type="search"
 						placeholder="Search for a word"

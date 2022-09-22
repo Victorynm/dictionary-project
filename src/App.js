@@ -1,16 +1,27 @@
 import "./App.css";
 import Dictionary from "./Dictionary";
+import Canvas from "./Canvas";
 
 function App() {
 	return (
-		<div className="App text-center">
-			<header className="App-header">
-				<h1>Dictionary</h1>
+		<div className="App">
+			<header className="App-header mt-3">
+				<div className="row  justify-content-center align-items-center">
+					<div className="col col-2 ">
+						<Canvas />
+					</div>
+
+					<div className="col col-4">
+						<h1 className="m-3">Dictionary</h1>
+					</div>
+				</div>
 			</header>
 
 			<Dictionary />
-			<footer className="m-5">
-				<small>Coded by Viktoriia Stanchak</small>
+			<footer className="">
+				<div className="footer">
+					<small>Coded by Viktoriia Stanchak</small>
+				</div>
 			</footer>
 		</div>
 	);

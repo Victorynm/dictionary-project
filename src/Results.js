@@ -1,7 +1,6 @@
 import React from "react";
 import Meaning from "./Meaning";
 import ReactAudioPlayer from "react-audio-player";
-import "./Results.css";
 
 export default function Results(props) {
 	console.log(props.results);
@@ -9,22 +8,20 @@ export default function Results(props) {
 		return (
 			<div className="Results">
 				<section>
-					<div className="container text-center">
-						<div className="row align-items-center">
-							<div className="col">
-								<h2 className="m-0 fs-1">{props.results.word}</h2>
-							</div>
-							<div className="col">
-								<p className="text-muted m-0 fs-2">
-									{props.results.phonetics[0].text}
-								</p>
-							</div>
-							<div className="col">
-								<ReactAudioPlayer
-									src={props.results.phonetics[0].audio}
-									controls
-								/>
-							</div>
+					<div className="row align-items-center text-center">
+						<div className="col">
+							<h2 className="m-0 fs-1">{props.results.word}</h2>
+						</div>
+						<div className="col">
+							<p className="text-muted m-0 fs-2">
+								{props.results.phonetics[0].text}
+							</p>
+						</div>
+						<div className="col">
+							<ReactAudioPlayer
+								src={props.results.phonetics[0].audio}
+								controls
+							/>
 						</div>
 					</div>
 				</section>
