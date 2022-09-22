@@ -3,16 +3,14 @@ import Synonyms from "./Synonyms";
 
 export default function Meaning(props) {
 	return (
-		<div className="Meaning">
-			<h4>{props.meaning.partOfSpeech}</h4>
+		<div className="Meaning text-start p-4">
+			<h3 className="text-center mb-3">{props.meaning.partOfSpeech}</h3>
 			{props.meaning.definitions.map(function (definition, index) {
 				if (definition.example) {
 					return (
 						<div key={index}>
-							<p>
-								<strong>Definition:</strong> {definition.definition}
-							</p>
-							<em>Example: {definition.example}</em>
+							<p>{definition.definition}</p>
+							<em>{definition.example}</em>
 
 							<ul>
 								<Synonyms synonyms={definition.synonyms} />
@@ -22,9 +20,7 @@ export default function Meaning(props) {
 				} else {
 					return (
 						<div key={index}>
-							<p>
-								<strong>Definition:</strong> {definition.definition}
-							</p>
+							<p>{definition.definition}</p>
 						</div>
 					);
 				}
