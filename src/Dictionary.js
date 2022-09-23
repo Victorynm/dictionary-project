@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
 import "./Dictionary.css";
+import { ErrorBoundary } from "react-error-boundary";
+import ErrorFallback from "./ErrorFallback";
 
 export default function Dictionary() {
 	const [keyword, setKeyword] = useState("");
@@ -34,7 +36,9 @@ export default function Dictionary() {
 					<button type="submit">Search</button>
 				</form>
 			</section>
-			<Results results={results} />
+			<ErrorBoundary FallbackComponent={ErrorFallback} resetKeys={[results]}>
+				<Results results={results} />
+			</ErrorBoundary>
 		</div>
 	);
 }

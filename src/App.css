@@ -1,16 +1,29 @@
+.App {
+	height: 100vh;
+}
+.App div.content {
+	min-height: calc(100vh - 90px);
+}
 .App h1 {
 	font-size: 50px;
 	font-weight: 700;
+	font-family: "Playfair Display", serif;
 }
 
 .App footer {
-	display: flex;
-	align-items: flex-end;
 	margin-top: 50px;
 }
 
 .App div.footer {
-	width: 100%;
-	height: 80px;
+	width: 50%;
+	height: 40px;
+	text-align: center;
+	align-items: center;
 	background: #e37f7f;
+	border-radius: 100px 100px 5px 5px;
+}
+
+.App small {
+	padding-top: 30px;
+	color: #fff;
 }
