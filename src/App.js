@@ -8,11 +8,11 @@ function App() {
 			<div className="content">
 				<header className="App-header mt-3">
 					<div className="row  justify-content-center align-items-center">
-						<div className="col col-2 ">
+						<div className="col col-2">
 							<Canvas />
 						</div>
 
-						<div className="col col-4">
+						<div className="col col-ld-4 col-sm-3">
 							<h1 className="m-3">Dictionary</h1>
 						</div>
 					</div>

@@ -29,3 +29,24 @@ button {
 .Dictionary button:hover {
 	background-color: #d25757;
 }
+
+@media (max-width: 1025px) {
+	.Dictionary section,
+	.Results section {
+		margin: 20px;
+	}
+}
+
+@media (max-width: 821px) {
+	.Dictionary section,
+	.Results section {
+		margin: 5px;
+	}
+}
+@media (max-width: 415px) {
+	.Dictionary button,
+	.Dictionary input {
+		display: block;
+		width: 100%;
+	}
+}
