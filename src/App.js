@@ -22,7 +22,16 @@ function App() {
 			</div>
 			<footer className="row justify-content-center align-items-end">
 				<div className="col col-1 footer">
-					<small>Coded by Viktoriia Stanchak</small>
+					<small>
+						Coded by Viktoriia Stanchak and is{" "}
+						<a
+							href="https://github.com/Victorynm/dictionary-project"
+							target="_blank"
+							rel="noreferrer"
+						>
+							open-sourced on GitHub
+						</a>
+					</small>
 				</div>
 			</footer>
 		</div>
